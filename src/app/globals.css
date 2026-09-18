@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "FellEnglishSC";
+  src: url("./assets/fonts/IMFellEnglishSC.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+body{
+  font-family: "FellEnglishSC";
+}
