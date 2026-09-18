@@ -4,12 +4,6 @@ header{
     background-image: repeating-linear-gradient(94deg,rgba(120,95,55,.045) 0 1px, transparent 1px 3px), repeating-linear-gradient(2deg,rgba(120,95,55,.035) 0 1px, transparent 1px 4px), radial-gradient(80% 60% at 20% 10%, rgba(160,120,60,.10), transparent 70%), radial-gradient(50% 40% at 88% 72%, rgba(140,90,40,.12), transparent 70%);
 }
 
-#btnPrimary{
-    color: rgb(242, 232, 208);
-    background-color: rgb(143, 42, 30);
-    border: 1px solid rgb(36, 28, 20);
-}
-
 .headerTop{
     border-bottom: 3px double rgb(36, 28, 20);
 }

@@ -5,10 +5,12 @@ import BtnPrimary from "./BtnPrimary";
 export default function Navbar(){
     return (
         <header>
-            <div className="d-flex justify-content-between align-items-center px-lg-4 py-lg-3 headerTop">
+            <div className="d-flex justify-content-lg-between align-items-center px-lg-4 py-lg-3 py-2 headerTop">
                 <Image src={"/images/logo-gif.gif"} alt="Logo du serveur MinePiece animé." width={60} height={50} />
                 <h1>MinePiece</h1>
-                <BtnPrimary text="Télécharger le launcher" />
+                <div className="d-none d-lg-flex">
+                    <BtnPrimary text="Télécharger le launcher" />
+                </div>
             </div>
             <nav className="navbar navbar-expand-lg px-lg-4 py-lg-2">
                 <div className="container-fluid">
