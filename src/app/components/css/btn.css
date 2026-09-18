@@ -1,0 +1,10 @@
+#btnPrimary{
+    color: rgb(242, 232, 208);
+    background-color: rgb(143, 42, 30);
+    border: 1px solid rgb(36, 28, 20);
+}
+
+#btnSecondary{
+    color: rgb(36, 28, 20);
+    border: 1px solid rgb(36, 28, 20);
+}

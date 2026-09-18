@@ -1,0 +1,46 @@
+.nouvelles {
+  position: relative;
+  background: rgba(232, 220, 192, .93);
+  color: #241c14;
+  padding: 16px 20px;
+  transform: rotate(-.6deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .45);
+  font-family: 'FellEnglishSC', Georgia, serif;
+}
+
+.nouvelles .entete {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  border-bottom: 1px solid #241c14;
+  padding-bottom: 4px;
+}
+.nouvelles .titre  { font-family: 'FellEnglishSC', serif; font-size: 22px; }
+.nouvelles .tampon {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .14em;
+  color: #6b5a3e;
+}
+
+.nouvelles .ligne {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px dotted rgba(36, 28, 20, .4);
+}
+
+.nouvelles .date {
+  flex: none;
+  width: 96px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #6b5a3e;
+}
+
+.nouvelles .texte {
+  font-size: 16.5px;
+  line-height: 1.45;
+  text-wrap: pretty;
+}

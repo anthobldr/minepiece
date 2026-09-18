@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./css/navbar.css"
+import "./css/btn.css"
 
 export default function BtnPrimary({text}: {text: string}){
     return (

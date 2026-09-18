@@ -1,0 +1,35 @@
+.avis-pont {
+  position: relative;
+  background: #e8dcc0;
+  color: #241c14;
+  padding: 24px 28px;
+  transform: rotate(.5deg);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .5);
+}
+
+.avis-pont .surtitre {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .34em;
+  color: #6b5a3e;
+}
+
+.avis-pont .chapo {
+  margin: 0 0 12px;
+  font-size: 18.5px;
+  line-height: 1.55;
+  font-style: italic;
+  color: #3b2e20;
+}
+
+.avis-pont .punaise {
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  margin-left: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #c9503c, #6b1f14);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+}
