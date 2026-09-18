@@ -15,7 +15,11 @@
   border-bottom: 1px solid #241c14;
   padding-bottom: 4px;
 }
-.nouvelles .titre  { font-family: 'FellEnglishSC', serif; font-size: 22px; }
+
+.nouvelles .titre  { 
+  font-family: 'FellEnglishSC', serif; font-size: 22px; 
+}
+
 .nouvelles .tampon {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
@@ -43,4 +47,54 @@
   font-size: 16.5px;
   line-height: 1.45;
   text-wrap: pretty;
+}
+
+@media (max-width: 768px) {
+  .nouvelles {
+    padding: 12px 16px;
+    transform: rotate(0deg);
+  }
+
+  .nouvelles .titre {
+    font-size: 18px;
+  }
+
+  .nouvelles .tampon {
+    font-size: 9px;
+  }
+
+  .nouvelles .ligne {
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .nouvelles .date {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .nouvelles .texte {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nouvelles {
+    padding: 10px 12px;
+  }
+
+  .nouvelles .titre {
+    font-size: 16px;
+  }
+
+  .nouvelles .ligne {
+    gap: 4px;
+    padding: 4px 0;
+  }
+
+  .nouvelles .texte {
+    font-size: 13px;
+    line-height: 1.4;
+  }
 }

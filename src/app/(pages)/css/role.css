@@ -33,3 +33,44 @@
   background: radial-gradient(circle at 35% 30%, #c9503c, #6b1f14);
   box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
 }
+
+@media (max-width: 768px) {
+  .avis-pont {
+    margin-top: 55px;
+    padding: 20px 24px;
+    transform: rotate(0deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+  }
+
+  .avis-pont .surtitre {
+    font-size: 9px;
+    letter-spacing: .3em;
+  }
+
+  .avis-pont h1 {
+    font-size: 24px;
+  }
+
+  .avis-pont .chapo {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .avis-pont {
+    padding: 16px 20px;
+  }
+
+  .avis-pont h1 {
+    font-size: 20px;
+  }
+
+  .avis-pont .chapo {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+}

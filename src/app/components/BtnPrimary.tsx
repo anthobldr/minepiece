@@ -3,6 +3,6 @@ import "./css/btn.css"
 
 export default function BtnPrimary({text}: {text: string}){
     return (
-        <Link id="btnPrimary" href="" className="text-decoration-none py-lg-2 px-lg-3">{text}</Link>
+        <Link id="btnPrimary" href="" className="text-decoration-none py-2 px-3">{text}</Link>
     )
 }

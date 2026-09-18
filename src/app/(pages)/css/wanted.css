@@ -29,7 +29,7 @@
     padding: 11px; 
 }
 
-.titre {
+.wanted {
   text-align: center;
   font-size: 30px;
   letter-spacing: .08em;
@@ -84,4 +84,66 @@
 
 .punaise-or { 
     background: radial-gradient(circle at 35% 30%, #e6c65c, #8a6a12); 
+}
+
+@media (max-width: 768px) {
+
+    .wanted-wrapper {
+        position: relative;
+        min-height: 250px;
+    }
+
+    .avis-1 {
+        right: auto;
+        left: 35%;
+        top: 20px;
+        width: 210px;
+        transform: translateX(-55%) rotate(2.4deg);
+    }
+
+    .avis-2 {
+        right: auto;
+        left: 70%;
+        top: 40px;
+        width: 190px;
+        transform: translateX(-45%) rotate(-3.1deg);
+    }
+
+    .cadre {
+        padding: 8px;
+    }
+
+    .titre {
+        font-size: 24px;
+    }
+
+    .titre.petit {
+        font-size: 21px;
+    }
+
+    .portrait {
+        height: 115px;
+        margin: 8px 0;
+    }
+
+    .portrait.court {
+        height: 90px;
+        margin: 6px 0;
+    }
+
+    .portrait span {
+        font-size: 8px;
+        padding: 2px 5px;
+    }
+
+    .prime {
+        font-size: 14px;
+    }
+
+    .punaise {
+        width: 13px;
+        height: 13px;
+        top: -7px;
+        margin-left: -6.5px;
+    }
 }

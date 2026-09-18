@@ -26,7 +26,7 @@ export default function Wanted(){
             {wanted.map((wanted) => (
                 <div key={wanted.id} className={`avis ${wanted.className}`}>
                     <div className="cadre">
-                        <div className={`titre ${wanted.titleClass}`}>
+                        <div className={`wanted ${wanted.titleClass}`}>
                             WANTED
                         </div>
                         <div className={`portrait ${wanted.portraitClass}`} style={{ backgroundImage: `url(${wanted.image})` }}></div>

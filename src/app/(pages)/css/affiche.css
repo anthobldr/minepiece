@@ -1,6 +1,9 @@
 .photo-pin {
     transform: rotate(-1.1deg);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .55), 0 14px 24px rgba(0, 0, 0, .45), 0 34px 60px rgba(0, 0, 0, .55);
+    box-shadow:
+        0 2px 3px rgba(0, 0, 0, .55),
+        0 14px 24px rgba(0, 0, 0, .45),
+        0 34px 60px rgba(0, 0, 0, .55);
 }
 
 .photo-pin__img {
@@ -13,7 +16,9 @@
 .photo-pin__vignette {
     inset: 10px 10px 50px;
     pointer-events: none;
-    box-shadow: inset 0 0 40px rgba(20, 12, 4, .45), inset 0 3px 10px rgba(0, 0, 0, .5);
+    box-shadow:
+        inset 0 0 40px rgba(20, 12, 4, .45),
+        inset 0 3px 10px rgba(0, 0, 0, .5);
 }
 
 .photo-pin__caption {
@@ -26,8 +31,14 @@
 }
 
 .tape {
-    background: linear-gradient(180deg,rgba(240, 230, 200, .8), rgba(214, 200, 164, .7));
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .4), 0 6px 12px rgba(0, 0, 0, .45);
+    background: linear-gradient(
+        180deg,
+        rgba(240, 230, 200, .8),
+        rgba(214, 200, 164, .7)
+    );
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, .4),
+        0 6px 12px rgba(0, 0, 0, .45);
 }
 
 .tape--tl {
@@ -48,12 +59,14 @@
 
 .tape--snap-top {
     left: 50%;
-    margin-left: -34px;
     top: -11px;
     width: 68px;
     height: 22px;
+    margin-left: -34px;
     transform: rotate(-8deg);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .4), 0 5px 10px rgba(0, 0, 0, .4);
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, .4),
+        0 5px 10px rgba(0, 0, 0, .4);
 }
 
 .tape--snap-right {
@@ -62,8 +75,14 @@
     width: 62px;
     height: 21px;
     transform: rotate(26deg);
-    background: linear-gradient(180deg, rgba(240, 230, 200, .8),rgba(214, 200, 164, .68));
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .4), 0 5px 10px rgba(0, 0, 0, .4);
+    background: linear-gradient(
+        180deg,
+        rgba(240, 230, 200, .8),
+        rgba(214, 200, 164, .68)
+    );
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, .4),
+        0 5px 10px rgba(0, 0, 0, .4);
 }
 
 .snap {
@@ -74,9 +93,12 @@
     right: -26px;
     top: -22px;
     width: 152px;
-    padding: 8px 8px;
+    padding: 8px;
     transform: rotate(6.5deg);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 12px 22px rgba(0, 0, 0, .5), 0 28px 48px rgba(0, 0, 0, .45);
+    box-shadow:
+        0 2px 3px rgba(0, 0, 0, .5),
+        0 12px 22px rgba(0, 0, 0, .5),
+        0 28px 48px rgba(0, 0, 0, .45);
 }
 
 .snap--bl {
@@ -86,14 +108,22 @@
     padding: 7px 7px 22px;
     background: #e4d6b4;
     transform: rotate(-7deg);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 11px 20px rgba(0, 0, 0, .5), 0 24px 42px rgba(0, 0, 0, .45);
+    box-shadow:
+        0 2px 3px rgba(0, 0, 0, .5),
+        0 11px 20px rgba(0, 0, 0, .5),
+        0 24px 42px rgba(0, 0, 0, .45);
+}
+
+.snap__slot,
+.snap__slot--dark {
+    background-size: cover;
+    box-shadow: inset 0 0 20px rgba(20, 12, 4, .4);
 }
 
 .snap__slot {
     height: 104px;
     padding-bottom: 6px;
     background-image: url(/images/arlong-park.webp);
-    background-size: cover;
     box-shadow: inset 0 0 22px rgba(20, 12, 4, .4);
 }
 
@@ -101,8 +131,6 @@
     height: 86px;
     padding-bottom: 5px;
     background-image: url(/images/fuchsia.webp);
-    background-size: cover;
-    box-shadow: inset 0 0 20px rgba(20, 12, 4, .4);
 }
 
 .snap__label {
@@ -123,4 +151,180 @@
     font-style: italic;
     font-size: 13px;
     color: #3b2e20;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .photo-pin__img {
+        height: 240px;
+        border: 8px solid #e8dcc0;
+        border-bottom-width: 38px;
+    }
+
+    .photo-pin__vignette {
+        inset: 8px 8px 38px;
+        box-shadow:
+            inset 0 0 30px rgba(20, 12, 4, .45),
+            inset 0 3px 8px rgba(0, 0, 0, .5);
+    }
+
+    .photo-pin__caption {
+        left: 84px;
+        bottom: 9px;
+        font-size: 13px;
+    }
+
+    .tape--tl {
+        left: -12px;
+        top: -9px;
+        width: 57px;
+        height: 20px;
+    }
+
+    .tape--tr {
+        right: -11px;
+        top: -8px;
+        width: 57px;
+        height: 20px;
+    }
+
+    .tape--snap-top {
+        top: -8px;
+        width: 51px;
+        height: 17px;
+        margin-left: -26px;
+    }
+
+    .tape--snap-right {
+        right: -12px;
+        top: -8px;
+        width: 47px;
+        height: 16px;
+    }
+
+    .snap--tr {
+        right: 0;
+        top: -17px;
+        width: 114px;
+        max-width: 90%;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+
+    .snap--bl {
+        left: 0;
+        bottom: -54px;
+        width: 95px;
+        max-width: 80%;
+        padding: 5px 5px 17px;
+        box-sizing: border-box;
+    }
+
+    .snap__slot {
+        height: 78px;
+        padding-bottom: 5px;
+        box-shadow: inset 0 0 17px rgba(20, 12, 4, .4);
+    }
+
+    .snap__slot--dark {
+        height: 65px;
+        padding-bottom: 4px;
+        box-shadow: inset 0 0 15px rgba(20, 12, 4, .4);
+    }
+
+    .snap__caption {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================
+   PETIT MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .photo-pin__img {
+        height: 200px;
+        border: 6px solid #e8dcc0;
+        border-bottom-width: 32px;
+    }
+
+    .photo-pin__vignette {
+        inset: 6px 6px 32px;
+        box-shadow:
+            inset 0 0 25px rgba(20, 12, 4, .45),
+            inset 0 2px 6px rgba(0, 0, 0, .5);
+    }
+
+    .photo-pin__caption {
+        left: 70px;
+        bottom: 7px;
+        font-size: 11px;
+    }
+
+    .tape--tl {
+        left: -10px;
+        top: -7px;
+        width: 48px;
+        height: 16px;
+    }
+
+    .tape--tr {
+        right: -9px;
+        top: -6px;
+        width: 48px;
+        height: 16px;
+    }
+
+    .tape--snap-top {
+        top: -7px;
+        width: 43px;
+        height: 14px;
+        margin-left: -22px;
+    }
+
+    .tape--snap-right {
+        right: -10px;
+        top: -6px;
+        width: 39px;
+        height: 13px;
+    }
+
+    .snap--tr {
+        right: 0;
+        top: -10px;
+        width: 90px;
+        max-width: 90%;
+        padding: 5px;
+    }
+
+    .snap--bl {
+        left: 0;
+        bottom: -35px;
+        width: 75px;
+        max-width: 80%;
+        padding: 4px 4px 14px;
+    }
+
+    .snap__slot {
+        height: 65px;
+        padding-bottom: 4px;
+        box-shadow: inset 0 0 14px rgba(20, 12, 4, .4);
+    }
+
+    .snap__slot--dark {
+        height: 54px;
+        padding-bottom: 3px;
+        box-shadow: inset 0 0 12px rgba(20, 12, 4, .4);
+    }
+
+    .snap__caption {
+        font-size: 9px;
+    }
 }
