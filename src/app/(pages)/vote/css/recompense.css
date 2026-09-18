@@ -1,0 +1,8 @@
+.recompense-card{
+    background-color: rgb(239, 227, 199);
+    border: 1px solid rgba(36, 28, 20);
+}
+
+.recompense-card > span{
+    color: rgb(107, 31, 20);
+}

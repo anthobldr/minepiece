@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "./css/navbar.css";
 import BtnPrimary from "./BtnPrimary";
 
@@ -22,10 +23,10 @@ export default function Navbar(){
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav d-flex text-center text-lg-start gap-3 gap-lg-4">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <Link className="nav-link active" aria-current="page" href="/">Accueil</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Vote</a>
+                                <Link className="nav-link" href="/vote">Vote</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Boutique</a>
