@@ -1,9 +1,12 @@
+'use client'
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./css/navbar.css";
 import BtnPrimary from "./BtnPrimary";
 
 export default function Navbar(){
+    const pathname = usePathname()
     return (
         <header>
             <div className="d-flex justify-content-lg-between align-items-center px-lg-4 py-lg-3 py-2 headerTop">
@@ -23,10 +26,10 @@ export default function Navbar(){
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav d-flex text-center text-lg-start gap-3 gap-lg-4">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="/">Accueil</Link>
+                                <Link className={`nav-link ${pathname === "/" ? "active" : "" }`} aria-current="page" href="/">Accueil</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="/vote">Vote</Link>
+                                <Link className={`nav-link ${pathname === "/vote" ? "active" : "" }`} href="/vote">Vote</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Boutique</a>

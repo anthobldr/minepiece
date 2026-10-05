@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main id="dashboard" className="pb-5 pt-4 pt-lg-0 pb-lg-2">
+      <main className="pb-5 pt-4 pt-lg-0 pb-lg-2">
         <section className="container">
           <div className="row py-lg-5">
             <div className="col-12 col-lg-6">
